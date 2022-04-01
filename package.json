@@ -1,11 +1,11 @@
 {
-  "name": "",
-  "description": "",
-  "repository": "",
-  "homepage": "",
-  "author": "",
+  "name": "jordan-christley-nba-assessment",
+  "description": "Taking initial assessment for NBA fullstack engineer.",
+  "repository": "https://github.com/JordanTreDaniel/NBA-assessment",
+  "homepage": "https://github.com/JordanTreDaniel/NBA-assessment",
+  "author": "Jordan Christley",
   "keywords": [],
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "engines": {
     "node": ">=13.2.0"
@@ -21,7 +21,6 @@
     "build": "rimraf build && tsc && tsc-alias",
     "preversion": "npm run lint && npm run build && npm test",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && npm run format && git add -A",
-    "postversion": "git push --follow-tags && npm publish",
     "lint": "eslint --ext ts,js --fix src",
     "format": "prettier src/**/*.ts -w",
     "build-live": "tsc -w && tsc-alias -w"
